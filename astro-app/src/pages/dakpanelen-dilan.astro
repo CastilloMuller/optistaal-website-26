@@ -1,0 +1,165 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Dakpanelen Dilan - Optistaal">
+  <main class="bg-white">
+    <!-- Hero Section - Jeton Style -->
+    <section class="min-h-screen flex items-center bg-optistaal-dark text-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-optistaal-blue to-optistaal-dark opacity-90"></div>
+      
+      <div class="max-w-7xl mx-auto px-6 py-20 relative z-10">
+        <div class="max-w-4xl">
+          <p class="text-optistaal-orange font-semibold mb-4 tracking-wide uppercase text-sm">
+            Dakbedekking
+          </p>
+          <h1 class="text-7xl md:text-8xl font-bold mb-8 leading-tight">
+            Dakpanelen<br/>
+            <span class="text-optistaal-orange">Dilan</span>
+          </h1>
+          <p class="text-2xl text-optistaal-lightblue mb-12 max-w-2xl leading-relaxed">
+            Hoogwaardige dakpanelen voor duurzame en esthetische oplossingen. Verkrijgbaar in meerdere kleuren en profielen.
+          </p>
+          <a 
+            href="#specificaties" 
+            class="inline-block bg-optistaal-orange text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-opacity-90 transition-all hover:scale-105"
+          >
+            Bekijk specificaties
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-optistaal-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Product Overview - Clean Grid -->
+    <section class="py-32 bg-white" id="specificaties">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-20 items-center mb-32">
+          <div>
+            <h2 class="text-5xl font-bold text-optistaal-dark mb-8">
+              Duurzaam en<br/>
+              veelzijdig
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              Dilan dakpanelen combineren superieure kwaliteit met moderne vormgeving. Perfect voor bedrijfshallen, loodsen en industriële gebouwen.
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 bg-optistaal-orange rounded-full mt-3"></div>
+                <div>
+                  <h3 class="font-bold text-optistaal-dark text-lg mb-2">Weerbestendig</h3>
+                  <p class="text-gray-600">Bestand tegen extreme weersomstandigheden en UV-straling</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 bg-optistaal-orange rounded-full mt-3"></div>
+                <div>
+                  <h3 class="font-bold text-optistaal-dark text-lg mb-2">Lange levensduur</h3>
+                  <p class="text-gray-600">Minimaal onderhoud, maximale duurzaamheid</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-2 h-2 bg-optistaal-orange rounded-full mt-3"></div>
+                <div>
+                  <h3 class="font-bold text-optistaal-dark text-lg mb-2">Kleurvast</h3>
+                  <p class="text-gray-600">Behoud van kleur en glans door hoogwaardige coating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-optistaal-cyan bg-opacity-20 rounded-3xl p-12 h-96"></div>
+        </div>
+
+        <!-- Technical Specs - Minimalist Cards -->
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-optistaal-dark text-white p-10 rounded-3xl hover:scale-105 transition-transform">
+            <p class="text-optistaal-orange text-sm font-semibold mb-4 uppercase tracking-wide">Dikte</p>
+            <p class="text-4xl font-bold mb-2">0.50mm</p>
+            <p class="text-optistaal-lightblue">Standaard uitvoering</p>
+          </div>
+          <div class="bg-optistaal-blue text-white p-10 rounded-3xl hover:scale-105 transition-transform">
+            <p class="text-optistaal-orange text-sm font-semibold mb-4 uppercase tracking-wide">Breedte</p>
+            <p class="text-4xl font-bold mb-2">1000mm</p>
+            <p class="text-optistaal-lightblue">Effectieve dekbreedte</p>
+          </div>
+          <div class="bg-optistaal-orange text-white p-10 rounded-3xl hover:scale-105 transition-transform">
+            <p class="text-white text-sm font-semibold mb-4 uppercase tracking-wide">Garantie</p>
+            <p class="text-4xl font-bold mb-2">15 jaar</p>
+            <p class="text-white text-opacity-80">Op kleur en coating</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color Options - Jeton Style Showcase -->
+    <section class="py-32 bg-optistaal-cyan bg-opacity-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <p class="text-optistaal-orange font-semibold mb-4 uppercase text-sm tracking-wide">Kleuren</p>
+          <h2 class="text-5xl font-bold text-optistaal-dark mb-6">
+            Kies uw stijl
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Verkrijgbaar in diverse RAL-kleuren voor optimale afstemming op uw huisstijl
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="group cursor-pointer">
+            <div class="bg-gray-700 h-64 rounded-2xl mb-4 group-hover:scale-105 transition-transform"></div>
+            <p class="font-semibold text-optistaal-dark">Antraciet</p>
+            <p class="text-gray-500 text-sm">RAL 7016</p>
+          </div>
+          <div class="group cursor-pointer">
+            <div class="bg-red-700 h-64 rounded-2xl mb-4 group-hover:scale-105 transition-transform"></div>
+            <p class="font-semibold text-optistaal-dark">Rood</p>
+            <p class="text-gray-500 text-sm">RAL 3009</p>
+          </div>
+          <div class="group cursor-pointer">
+            <div class="bg-green-800 h-64 rounded-2xl mb-4 group-hover:scale-105 transition-transform"></div>
+            <p class="font-semibold text-optistaal-dark">Groen</p>
+            <p class="text-gray-500 text-sm">RAL 6005</p>
+          </div>
+          <div class="group cursor-pointer">
+            <div class="bg-blue-900 h-64 rounded-2xl mb-4 group-hover:scale-105 transition-transform"></div>
+            <p class="font-semibold text-optistaal-dark">Blauw</p>
+            <p class="text-gray-500 text-sm">RAL 5010</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA - Bold & Simple -->
+    <section class="py-32 bg-optistaal-dark text-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-6xl font-bold mb-8">
+          Vraag een<br/>
+          <span class="text-optistaal-orange">offerte aan</span>
+        </h2>
+        <p class="text-xl text-optistaal-lightblue mb-12 max-w-2xl mx-auto">
+          Ontvang binnen 24 uur een vrijblijvende prijsopgave op maat
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="mailto:info@optistaal.nl" 
+            class="bg-optistaal-orange text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-opacity-90 transition-all hover:scale-105"
+          >
+            Contact opnemen
+          </a>
+          <a 
+            href="tel:+31612345678" 
+            class="bg-white bg-opacity-10 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-opacity-20 transition-all border-2 border-white border-opacity-20"
+          >
+            Bel direct
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
