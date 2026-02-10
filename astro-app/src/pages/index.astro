@@ -1,14 +1,81 @@
 ---
-import Card from "../components/Card.astro";
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/Layout.astro";
-import { getPosts } from "../utils/sanity";
-
-const posts = await getPosts();
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-  <section>
-    {posts.length ? posts.map((post) => <Card post={post} />) : <Welcome />}
-  </section>
+<Layout title="Optistaal - Staalconstructie op maat">
+  <main class="min-h-screen bg-white">
+    <!-- Hero Section -->
+    <section class="bg-optistaal-blue text-white py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center gap-4 mb-8">
+          <img src="/Optistaal2.png" alt="Optistaal Logo" class="h-16" />
+        </div>
+        <h1 class="text-5xl font-bold mb-6">
+          Staalconstructie op maat
+        </h1>
+        <p class="text-xl text-optistaal-lightblue mb-8 max-w-2xl">
+          Specialist in maatwerk staalconstructies voor bedrijfshallen, loodsen en industriële gebouwen.
+        </p>
+        <a 
+          href="#contact" 
+          class="inline-block bg-optistaal-orange text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition"
+        >
+          Vraag offerte aan
+        </a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-optistaal-cyan bg-opacity-30">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-optistaal-dark mb-12 text-center">
+          Onze diensten
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold text-optistaal-blue mb-4">
+              Bedrijfshallen
+            </h3>
+            <p class="text-gray-600">
+              Maatwerk staalconstructies voor uw bedrijfshal, volledig naar wens ontworpen en gerealiseerd.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold text-optistaal-blue mb-4">
+              Industriële loodsen
+            </h3>
+            <p class="text-gray-600">
+              Stevige en duurzame constructies voor opslag en productie, gebouwd voor de lange termijn.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold text-optistaal-blue mb-4">
+              Zelfbouwpakketten
+            </h3>
+            <p class="text-gray-600">
+              Complete bouwpakketten voor doe-het-zelvers, inclusief tekeningen en begeleiding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-optistaal-orange text-white py-16">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">
+          Klaar om uw project te starten?
+        </h2>
+        <p class="text-xl mb-8">
+          Neem contact op voor een vrijblijvende offerte
+        </p>
+        <a 
+          href="mailto:info@optistaal.nl" 
+          class="inline-block bg-white text-optistaal-orange px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition"
+        >
+          Contact opnemen
+        </a>
+      </div>
+    </section>
+  </main>
 </Layout>
